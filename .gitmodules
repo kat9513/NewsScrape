@@ -1,0 +1,3 @@
+[submodule "news_scrape"]
+	path = news_scrape
+	url = https://github.com/kat9513/news_scrape.git
