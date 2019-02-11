@@ -1,5 +1,5 @@
 {
-  "name": "newsscrape",
+  "name": "app.js",
   "version": "1.0.0",
   "description": "# All the News That's Fit to Scrape",
   "main": "server.js",
