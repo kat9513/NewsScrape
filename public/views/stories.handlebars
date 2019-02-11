@@ -1,0 +1,38 @@
+<div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Saved Articles<span class="sr-only">(current)</span></a>
+    </nav>
+
+    <div class="card">
+        <div class = "card-body">
+            <h1 class="text-center">News Scraper</h1>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-scrape">Scrape Articles!</button>
+                    <button type="button" class="btn btn-danger btn-delete">Delete Articles!</button>
+                </div>
+        </div>
+    </div>
+
+    <ul>
+        {{#each stories}}
+        <div class="card mx-auto" style="width: 75%">
+            <div class="card-body">
+                <h1>{{headline}}</h1>
+                <!--<p>{{summary}}</p>-->
+                <a href={{url}}>click to read more</a>
+                <h2>summary will go here</h2>
+                <button type="button" class="btn btn-success btn-save">Save Article</button>
+            </div>
+        </div>
+
+        {{/each}}
+    </ul>
+</div>
